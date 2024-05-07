@@ -1,0 +1,213 @@
+---
+title: "EDT Chapter 6 Study Notes"
+author: "TSZWAI NG"
+date: "2024-05-06"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Concepts
+
+
+## 1. Posteriori Probabilities
+
+
+**Definition**: Posteriori probabilities are updated probabilities that are calculated after considering new evidence or data. They modify the initial assumptions or prior probabilities based on this new information.
+
+**Application**: In decision-making, a posteriori probabilities are crucial because they provide a revised measure of uncertainty after observing an outcome. For instance, if a weather forecast initially predicts a 40% chance of rain (prior probability), and then it starts raining (new evidence), the posteriori probability of continued rain might increase.
+
+**How to Calculate**: These probabilities are often computed using Bayes’ Theorem, which integrates prior probability with new data through likelihood to yield revised probabilities. 
+
+
+This theorem is foundational in Bayesian statistics, allowing people to make better decisions since latest information are been used.
+
+
+## 2. No-Data Problems
+**Definition**: No-data problems refer to decision scenarios where actions were done based on the previous data (or information) but no new additional data. 
+
+These problems stand up in conditions wherein amassing new data is impractical, not possible, or irrelevant. Decision-makers need to rely on existing information or assumptions about the probabilities of different results.
+
+
+**Decision-making**: In these cases, decisions are often guided by expected utility theory, where the choice that maximizes the expected benefit or minimizes expected loss according to the known probabilities is selected.
+
+
+**Example**: When there is no weather forecast, how will the people make the decision about carrying an umbrella or not? If historical data indicates a 30% chance of rain on similar days, one might decide to carry an umbrella based on this prior probability alone, in particular, if the inconvenience of having wet is high.
+
+## 3. Bayes Strategies
+**Definition**: Bayes strategies involve choosing actions that minimize expected losses or maximize expected utility based on a posteriori probabilities.
+
+
+This approach integrates the concepts of a priori and a posteriori probabilities. A decision-maker starts with a prior belief about the probabilities of various states of the world, updates these beliefs upon receiving new data, and then chooses the action that optimizes the expected outcome using the updated beliefs.
+
+
+**Implementation**: The computation of a Bayes strategy often involves detailed analysis, including:
+
+*Determining a priori probabilities* for each possible outcome or state of nature based on historical data or subjective judgment.
+     
+*Updating these probabilities* as a posteriori probabilities when new data becomes available.
+     
+*Calculating expected losses* for each possible action given the new probabilities.
+     
+*Selecting the action* that minimizes the expected loss or maximizes the expected gain.
+     
+**Example**: If a pharmaceutical company is deciding whether to sell a new drug, it might start with prior beliefs about the drug’s effectiveness and side effects based on previous studies (priori probabilities). After conducting a new clinical trial (new data), it updates these probabilities ( posteriori). The company then calculates the expected financial and health outcomes of launching or not launching the drug and chooses the option with the best-expected outcome.
+
+These concepts provide a strong framework for making informed decisions beneath uncertainty, leveraging both earlier knowledge and new statistics to strategically navigate complicated situations.
+
+
+# Scenario Discussed
+
+In this chapter, we explore the interaction between Mr. Solomon and his guests at a hotel who are planning their activities based on weather predictions. Initially, they rely on their belief that it generally rains 40% of the time—this belief is known as their a priori probability. As they observe the current weather conditions, they update these probabilities. This process uses what is known as a posteriori probabilities. For example, if it starts raining, which contradicts their initial belief, they recalibrate their expectations for more rain. This adjustment is crucial in decision-making as it allows them to refine their strategies dynamically based on new data, applying the concept of posteriori probabilities to real scenarios.
+
+Furthermore, the guests employ conditional probabilities to adjust their expectations of rain based on the weather the previous day, showing how probabilities depend on the occurrence of other events. This ability to update strategies based on dependencies between events is vital in decision-making contexts. For instance, if it rained yesterday and similar patterns suggest consecutive rainy days, their belief in rain today will increase, thus altering their posteriori probabilities accordingly.
+
+The chapter also discusses independent probabilities, which are probabilities that do not influence each other. This is explored through questioning whether weather events like rain today and yesterday are truly independent or if one influences the other.
+
+In terms of strategic considerations, the chapter evaluates whether the strategies used by Mr. Solomon's guests were effective. This involves assessing the practical application of their decision-making processes with updated probabilistic data. There's a discussion on whether these decision-making strategies could be simplified by incorporating data sequentially as it becomes available, aligning with the concept of Bayes strategies. By updating their beliefs with each new piece of data, they can make more informed decisions without the complexity that might arise if considering all potential data simultaneously. This sequential updating helps in reducing the overall complexity of the decision-making process, demonstrating a practical approach to handling uncertainty in everyday scenarios.
+
+
+# Advanced Methodologies in Decision Making
+In this detailed exploration of advanced decision-making methodologies, we delve into the strategies that leverage statistical probabilities to refine and optimize choices in uncertain scenarios. Here's a breakdown of key methodological insights from the chapter:
+
+## Computing Pure Strategies:
+
+**Explanation**: Pure strategies involve a direct approach to decision-making where each possible outcome is paired with a specific action. This method requires considering all potential outcomes and determining the best course of action for each. For instance, if a weather forecast gives several scenarios (sunny, rainy, cloudy), a pure strategy would specify what to do in each case (e.g., picnic, indoor activities, light outdoor activities).
+
+
+**Application**: By computing strategies this way, decision-makers can prepare for each potential situation, ensuring that no scenario catches them off guard. This method is especially useful in environments where outcomes can be distinctly categorized and the consequences of actions are well understood.
+
+
+## Digesting Observations:
+**Process**: This involves the iterative updating of a priori probabilities as new information becomes available. It's a dynamic process where each piece of data is used to refine previous estimates, making the decision-making process more responsive to the latest developments.
+
+
+**Simplification**: By continually adjusting probabilities based on new data, decision-makers can avoid the complexities of handling large volumes of information all at once. This iterative process simplifies decision-making by breaking it down into manageable steps, where each new piece of information incrementally influences the overall strategy.
+
+
+## Utility of Bayes Strategy:
+
+**Efficiency**: The Bayes strategy is particularly effective because it focuses only on relevant information as it becomes available, ignoring redundant or irrelevant data. This targeted approach prevents decision-makers from being overwhelmed by the vast amounts of data that could potentially be considered.
+
+**Implementation**: By employing Bayes strategies, organizations or individuals can manage complex decision-making environments more effectively. The strategy involves recalculating probabilities and adjusting decisions as new data is integrated, streamlining the process and focusing on the most impactful information.
+
+
+# Enhancing Decision-Making with Statistical Techniques
+
+In the context of statistical analysis, the book also provides the effective use of graphical representations and comparative analysis. Here's a more detailed look at these techniques:
+
+## Graphical Representation:
+
+**Purpose**: Graphs are used extensively to make complex probability concepts more understandable. By visualizing data, graphs help illustrate relationships and trends that might be difficult to discern through raw data alone.
+
+**Application in Decision-Making**: In decision-making, graphical representations can show how different probabilities and outcomes relate to each other. For instance, a graph might display the likelihood of various weather scenarios (like rain or sunshine) and their potential impact on an event's success. This visual aid helps decision-makers quickly assess risks and benefits without delving into more complex calculations.
+
+**Examples**: Common types of graphs used include bar charts to compare frequencies, line graphs to show changes over time, and scatter plots to depict the relationships between two variables. These graphs can simplify decision-making processes by clearly showing which options might lead to better outcomes based on historical data or predictive models.
+
+## Comparative Analysis:
+**Purpose**: This technique involves evaluating different types of data to understand their impact on posterior probabilities. It is crucial for adjusting strategies based on new information that alters initial assumptions.
+
+**Implementation**: Comparative analysis is used to examine how different scenarios might unfold based on varying data inputs. For example, in a business context, it could involve comparing sales data under different marketing strategies to see which approach increases the probability of higher sales.
+
+**Impact on Decisions**: By understanding the effects of different data on posterior probabilities, decision-makers can more effectively choose actions that are more likely to lead to desired outcomes. For example, if data shows that a certain supply chain strategy reduces delivery times and costs (as seen through comparative analysis), a company might be more inclined to adopt that strategy over others.
+
+These statistical techniques are not only essential for providing clarity and insight into complex datasets but also play a pivotal role in strategic planning and decision-making. By employing graphical representations and comparative analysis, individuals and organizations can make more informed choices, leveraging statistical tools to predict outcomes and plan accordingly. This approach allows for a systematic examination of options, leading to more strategic and data-driven decisions.
+
+# Historical Context
+
+## Posterior Probabilities:
+
+**Origin**: The concept of posterior probabilities comes from Bayesian statistics, named after Thomas Bayes, an 18th-century British statistician and philosopher. Bayes developed the foundational formula that allows new evidence to update beliefs about uncertain events. His work was posthumously published in the mid-1760s and later extended by Pierre-Simon Laplace, who is often credited with developing the Bayesian inference. (Thomas, 1763)
+
+**Development**: Over the years, Bayesian statistics have grown in popularity, especially with the advent of modern computing, which made complex Bayesian calculations more feasible. It has been applied across various fields, from genetics to machine learning, to update the likelihood of hypotheses as new data becomes available.
+
+## 2. No-Data Problems:
+**Background**: Decision-making in the absence of new data has always been a challenge, particularly in historical contexts where data collection was laborious or impossible. The theory of expected utility, developed in the 18th century by Daniel Bernoulli, addresses this issue. It suggests that decisions should maximize the expected utility (or minimize loss) based on known probabilities. (Bernoulli,1782)
+
+**Evolution**: Over time, as statistical methods developed, techniques to handle decisions with limited data evolved. The development of robust and minimax strategies in the 20th century, particularly through the work of Abraham Wald, provided structured ways to make decisions under uncertainty with limited information. (Wald, 1949)
+
+## 3. Bayes Strategies:
+**Historical Development**: The practical application of Bayes’ theorem to develop decision-making strategies became prominent with advances in statistical theory during the 20th century. The work of Leonard Jimmie Savage, who combined Bayesian probability with decision theory, has been particularly influential in framing how decisions are made when probabilities are updated with new information.
+
+**Modern Applications**: Today, Bayes strategies are integral to many areas of science and technology. They help in making informed decisions in complex situations where each piece of new information can significantly alter the understanding of a problem.
+
+# Statistical Practice Implications
+
+
+## Enhanced Decision-Making Under Uncertainty:
+**Practical Implication**: The application of Bayesian statistics allows statisticians and researchers to continually update their understanding and predictions based on new data. This is crucial in fields like medicine, where decisions on patient treatment can significantly benefit from the most current data analyses.
+ 
+ **Example**: In clinical trials, Bayesian methods can be used to modify trials based on interim results, potentially speeding up the process of finding effective treatments.
+
+## Adaptive Learning and Prediction:
+**Practical Implication**: Bayesian methods facilitate adaptive learning, where models adjust as they receive new data. This is particularly valuable in machine learning and artificial intelligence for developing systems that adapt and improve over time.
+
+**Example**: In financial forecasting, Bayesian models can adjust predictions of market trends based on the latest market changes, providing more accurate and timely investment advice.
+
+## Risk Management:
+**Practical Implication**: By calculating posterior probabilities, businesses and organizations can better manage risks by understanding the likelihood of various adverse events. This approach helps in allocating resources more effectively and preparing for potential challenges.
+
+**Example**: In project management, Bayesian statistics can help predict the likelihood of project delays or budget overruns, allowing managers to proactively implement mitigation strategies.
+
+## Resource Optimization:
+**Practical Implication**: Bayesian decision theory helps in optimizing the allocation of resources by enabling decisions that maximize expected utility based on current knowledge.
+
+**Example**: In supply chain management, Bayesian strategies can be used to determine optimal stock levels by considering past sales data and forecasted demand changes.
+
+## Policy Development and Evaluation:
+**Practical Implication**: Governments and policymakers can use Bayesian methods to evaluate the effectiveness of policies and make informed decisions about policy adjustments or developments.
+
+**Example**: In public health, Bayesian models can assess the effectiveness of different health interventions on population health outcomes, influencing policy decisions on health guidelines and resource allocation.
+
+## Ethical and Transparent Decision-Making:
+**Practical Implication**: Bayesian statistics promote transparency in the decision-making process by clearly showing how conclusions are drawn from the data. This can help in maintaining ethical standards by making the basis of decisions clear and justifiable.
+
+**Example**: In data journalism, using Bayesian methods can help journalists provide a transparent and understandable basis for the statistical claims made in news reports, enhancing credibility and public trust.
+
+In summary, the implications of the statistical practices discussed in the chapter extend far beyond academic realms into practical, everyday applications affecting industries, government policies, and general public understanding. These practices encourage a dynamic approach to decision-making, where data continuously informs and refines strategies and predictions.
+
+# Implementing Bayesian Statistics with R
+
+
+## Setting Up a Bayesian Model in R
+
+```{r}
+library(MCMCpack)
+```
+
+**Step 1: Define Prior Beliefs and Data**
+```{r}
+alpha_prior <- 1
+beta_prior <- 1
+
+successes <- 3
+trials <- 10
+```
+
+**Step 2: Perform Bayesian Update Using MCMC**
+```{r}
+posterior_samples <- MCbinomialbeta(successes, trials, alpha_prior, beta_prior, mcmc = 5000)
+```
+
+**Step 3: Analyzing the Results**
+```{r}
+summary(posterior_samples)
+
+plot(posterior_samples)
+```
+The results indicate a relatively wide range of plausible values for the probability of success, reflecting significant uncertainty possibly due to the small number of trials. The 95% credible interval (from about 0.1032 to 0.6005) covers a broad range, suggesting that while the point estimate (mean) gives a central tendency, there is substantial uncertainty around it. 
+
+
+
+
+
+
+**References**:
+Bayes Thomas 1763LII. An essay towards solving a problem in the doctrine of chances. By the late Rev. Mr. Bayes, F. R. S. communicated by Mr. Price, in a letter to John Canton, A. M. F. R. SPhil. Trans. R. Soc.53370–418. http://doi.org/10.1098/rstl.1763.0053
+
+Specimen Theoriae Novae de Mensura Sortis: Daniele Bernoulli (1700–1782): Free Download, Borrow, and Streaming. (1970). Retrieved from https://archive.org/details/SpecimenTheoriaeNovaeDeMensuraSortis
+
+
+Abraham Wald. "Statistical Decision Functions." Ann. Math. Statist. 20 (2) 165 - 205, June, 1949. https://doi.org/10.1214/aoms/1177730030
