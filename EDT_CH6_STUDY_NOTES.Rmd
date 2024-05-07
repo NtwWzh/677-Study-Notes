@@ -211,3 +211,5 @@ Specimen Theoriae Novae de Mensura Sortis: Daniele Bernoulli (1700–1782): Free
 
 
 Abraham Wald. "Statistical Decision Functions." Ann. Math. Statist. 20 (2) 165 - 205, June, 1949. https://doi.org/10.1214/aoms/1177730030
+
+chatgpt
